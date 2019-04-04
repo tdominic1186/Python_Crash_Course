@@ -69,7 +69,7 @@ class Battery():
             print("\nThe battery size has now been set to 85.")
 
 
-        message = "This car can go approximately " + str(range)
+        message = "This car can go approximately " + str(range) 
         message += " miles on a full charge."
         print(message)
 
@@ -89,9 +89,14 @@ class ElectricCar(Car):
     #     """Print a statemnt describing the battery size."""
     #     print("This car has a " + str(self.battery_size) + "-kWh battery.")
 
+#Makes an electric car instance with default battery size
 my_tesla = ElectricCar('tesla', 'model s', 2016)
 
 print(my_tesla.get_descriptive_name())
-# my_tesla.describe_battery()
 my_tesla.battery.describe_battery()
-my_tesla.battery.get_range()
+# my_tesla.battery.get_range()
+
+my_tesla.battery.upgrade_battery()
+# my_tesla.battery.describe_battery()
+
+
